@@ -3,9 +3,9 @@ services:
   stellar:
     build:
       context: ./src/stellar
-    image: brian/stellar:latest
+    image: stellar:latest
     volumes : 
-      - "./test:/opt/stellar"
+      - "./data:/opt/stellar"
     ports:
       - "8000:8000"
     environment:
