@@ -1,0 +1,2 @@
+1. docker-compose up --build
+2. To change any configutations, just stop the container and make changes to the files in the test folder ie. To make changes to the stellar-core config file, open the cfg file in the etc folder and make whatever changes you need then restart the container by running the 1st command on the list.
