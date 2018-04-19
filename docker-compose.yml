@@ -1,0 +1,13 @@
+version: '2'
+services:
+  stellar:
+    build:
+      context: ./src/stellar
+    image: brian/stellar:latest
+    volumes : 
+      - "./test:/opt/stellar"
+    ports:
+      - "8000:8000"
+    environment:
+      - POSTGRES_PASSWORD=mypass123
+      - PGPASS=mypass123
